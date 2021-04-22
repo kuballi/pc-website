@@ -1,0 +1,19 @@
+﻿.build {
+    background-color: #f2f2f2;
+    margin:auto;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 850px;
+    height: 1350px;
+}
+.banner-image {
+    background: url('../Media/banner-build.jpg');
+    margin-top:70px;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}

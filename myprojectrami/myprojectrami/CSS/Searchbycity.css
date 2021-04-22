@@ -1,0 +1,9 @@
+﻿select {
+    width: 80%;
+    height: 100px;
+    font-size: 16px;
+    padding: 20px 0px;
+    color: #6D7781;
+    background: transparent;
+    border-bottom: 1px solid #435160;
+}

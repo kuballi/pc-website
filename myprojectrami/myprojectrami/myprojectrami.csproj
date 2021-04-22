@@ -1,0 +1,467 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A81244F-75E6-427F-B6AB-6C6B6294D7A7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>myprojectrami</RootNamespace>
+    <AssemblyName>myprojectrami</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44305</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\deleteuser.aspx" />
+    <Content Include="Admin\logout.aspx" />
+    <Content Include="Admin\reply.aspx" />
+    <Content Include="Admin\searchbyemail.aspx" />
+    <Content Include="Admin\searchbyfirstname.aspx" />
+    <Content Include="Admin\searchbylastname.aspx" />
+    <Content Include="Admin\searchbygender.aspx" />
+    <Content Include="Admin\searchbypassword.aspx" />
+    <Content Include="Admin\searchbyphonnumber.aspx" />
+    <Content Include="Admin\statsclient.aspx" />
+    <Content Include="Admin\statsuser.aspx" />
+    <Content Include="App_Data\CumputerDB.mdb" />
+    <Content Include="CSS\Account.css" />
+    <Content Include="CSS\Build.css" />
+    <Content Include="CSS\Checkout.css" />
+    <Content Include="CSS\General.css" />
+    <Content Include="CSS\Generaladmin.css" />
+    <Content Include="CSS\Generaluser.css" />
+    <Content Include="CSS\Searchbycity.css" />
+    <Content Include="CSS\searchuser.css" />
+    <Content Include="CSS\Shopping.css" />
+    <Content Include="CSS\contactus.css" />
+    <Content Include="General\2facode.aspx" />
+    <Content Include="General\forgotpass1.aspx" />
+    <Content Include="General\forgotpass2.aspx" />
+    <Content Include="General\forgotpass3.aspx" />
+    <Content Include="General\robot.aspx" />
+    <Content Include="JavaScripts\build.js" />
+    <Content Include="JavaScripts\chkcontact.js" />
+    <Content Include="JavaScripts\chklog.js" />
+    <Content Include="JavaScripts\chkreg.js" />
+    <Content Include="JavaScripts\email.js" />
+    <Content Include="JavaScripts\forgotpasschk1.js" />
+    <Content Include="JavaScripts\forgotpasschk3.js" />
+    <Content Include="JavaScripts\Gaming.js" />
+    <Content Include="CSS\Gaming.css" />
+    <Content Include="CSS\Homepage.css" />
+    <Content Include="CSS\Hardware.css" />
+    <Content Include="CSS\Login.css" />
+    <Content Include="CSS\Signup.css" />
+    <Content Include="CSS\Developing.css" />
+    <Content Include="General\Gaming.html" />
+    <Content Include="General\Developing.html" />
+    <Content Include="General\Hardware.html" />
+    <Content Include="General\Homepage.html" />
+    <Content Include="General\login.aspx" />
+    <Content Include="General\signup.aspx" />
+    <Content Include="JavaScripts\chkout.js" />
+    <Content Include="JavaScripts\password.js" />
+    <Content Include="JavaScripts\username.js" />
+    <Content Include="Media\admin.png" />
+    <Content Include="Media\adminf.png" />
+    <Content Include="Media\Apex 5.mp4" />
+    <Content Include="Media\APEX PRO.png" />
+    <Content Include="Media\ASUS.png" />
+    <Content Include="Media\AsusROGStrixG15.png" />
+    <Content Include="Media\AsusROGStrixGA15.png" />
+    <Content Include="Media\AsusROGStrixGT35.png" />
+    <Content Include="Media\AsusVG279M27LED.png" />
+    <Content Include="Media\AsusVG279Q27LEDIPS.png" />
+    <Content Include="Media\banner-build.jpg" />
+    <Content Include="Media\banner-dev.jpg" />
+    <Content Include="Media\banner-gaming.jpg" />
+    <Content Include="Media\banner-hardware.jpg" />
+    <Content Include="Media\banner-home.jpg" />
+    <Content Include="Media\banner-shop.jpg" />
+    <Content Include="Media\cards.png" />
+    <Content Include="Media\CORSAIR.png" />
+    <Content Include="Media\CorsairMM800C.png" />
+    <Content Include="Media\counter strike.jpg" />
+    <Content Include="Media\CounterStrike Global Offensive Trailer.mp4" />
+    <Content Include="Media\cpu.png" />
+    <Content Include="Media\discord.png" />
+    <Content Include="Media\Fortnite Battle Pass Trailer for Chapter 2 Season 6.mp4" />
+    <Content Include="Media\Fortnite Chapter 2 Season 6.jpg" />
+    <Content Include="Media\fortnite.jpg" />
+    <Content Include="Media\FURIA Esports.png" />
+    <Content Include="Media\gen11.jpg" />
+    <Content Include="Media\gpu.png" />
+    <Content Include="Media\Grand Theft Auto V Trailer.mp4" />
+    <Content Include="Media\Grand-Theft-Auto-V.jpg" />
+    <Content Include="Media\HYPERX.png" />
+    <Content Include="Media\HyperXCloud.png" />
+    <Content Include="Media\icon.png" />
+    <Content Include="Media\instagram.png" />
+    <Content Include="Media\LogitecGPro.png" />
+    <Content Include="Media\Logitech.png" />
+    <Content Include="Media\minecraft.jpg" />
+    <Content Include="Media\motherbord.png" />
+    <Content Include="Media\MSI.png" />
+    <Content Include="Media\Nvidia.png" />
+    <Content Include="Media\Official Minecraft Trailer.mp4" />
+    <Content Include="Media\overwhtch.jpg" />
+    <Content Include="Media\PRO X SUPERLIGHT.mp4" />
+    <Content Include="Media\python.jpg" />
+    <Content Include="Media\ram.png" />
+    <Content Include="Media\Razer Basilisk Ultimate.mp4" />
+    <Content Include="Media\Razer Basilisk Ultimate.png" />
+    <Content Include="Media\Razer BlackWidow Elite.mp4" />
+    <Content Include="Media\Razer BlackWidow Elite.png" />
+    <Content Include="Media\Razer BlackWidow V3 Pro.mp4" />
+    <Content Include="Media\Razer BlackWidow V3 Pro.png" />
+    <Content Include="Media\Razer Viper Ultimate.mp4" />
+    <Content Include="Media\RAZER.png" />
+    <Content Include="Media\RazerSeirenEliteDesktop.png" />
+    <Content Include="Media\Ryzen5000.png" />
+    <Content Include="Media\series 30.jpg" />
+    <Content Include="Media\shop.png" />
+    <Content Include="Media\SteelSeries Apex 7 TKL.png" />
+    <Content Include="Media\SteelSeries Apex Pro.mp4" />
+    <Content Include="Media\SteelSeries Rival 650.mp4" />
+    <Content Include="Media\steelseries rival 650.png" />
+    <Content Include="Media\steelseries.png" />
+    <Content Include="Media\SteelSeriesArctis5.png" />
+    <Content Include="Media\superlight pro x.png" />
+    <Content Include="Media\userf.jpg" />
+    <Content Include="Media\userm.png" />
+    <Content Include="Media\viper ultimate.png" />
+    <Content Include="Media\whatsapp.png" />
+    <Content Include="Admin\searchbycity.aspx" />
+    <Content Include="User\2FA.aspx" />
+    <Content Include="User\account.aspx" />
+    <Content Include="User\build.aspx" />
+    <Content Include="User\checkout.aspx" />
+    <Content Include="User\contactus.aspx" />
+    <Content Include="User\delete.aspx" />
+    <Content Include="User\email.aspx" />
+    <Content Include="User\password.aspx" />
+    <Content Include="User\Payment.aspx" />
+    <Content Include="User\shopping.aspx" />
+    <Content Include="User\username.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\deleteuser.aspx.cs">
+      <DependentUpon>deleteuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\deleteuser.aspx.designer.cs">
+      <DependentUpon>deleteuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\reply.aspx.cs">
+      <DependentUpon>reply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\reply.aspx.designer.cs">
+      <DependentUpon>reply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\searchbyemail.aspx.cs">
+      <DependentUpon>searchbyemail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\searchbyemail.aspx.designer.cs">
+      <DependentUpon>searchbyemail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\searchbyfirstname.aspx.cs">
+      <DependentUpon>searchbyfirstname.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\searchbyfirstname.aspx.designer.cs">
+      <DependentUpon>searchbyfirstname.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\searchbylastname.aspx.cs">
+      <DependentUpon>searchbylastname.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\searchbylastname.aspx.designer.cs">
+      <DependentUpon>searchbylastname.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\searchbygender.aspx.cs">
+      <DependentUpon>searchbygender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\searchbygender.aspx.designer.cs">
+      <DependentUpon>searchbygender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\searchbypassword.aspx.cs">
+      <DependentUpon>searchbypassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\searchbypassword.aspx.designer.cs">
+      <DependentUpon>searchbypassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\searchbyphonnumber.aspx.cs">
+      <DependentUpon>searchbyphonnumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\searchbyphonnumber.aspx.designer.cs">
+      <DependentUpon>searchbyphonnumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\statsclient.aspx.cs">
+      <DependentUpon>statsclient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\statsclient.aspx.designer.cs">
+      <DependentUpon>statsclient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\statsuser.aspx.cs">
+      <DependentUpon>statsuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\statsuser.aspx.designer.cs">
+      <DependentUpon>statsuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\mySql.cs" />
+    <Compile Include="App_Code\Connect.cs" />
+    <Compile Include="App_Code\SendEmail.cs" />
+    <Compile Include="General\2facode.aspx.cs">
+      <DependentUpon>2facode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General\2facode.aspx.designer.cs">
+      <DependentUpon>2facode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General\forgotpass1.aspx.cs">
+      <DependentUpon>forgotpass1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General\forgotpass1.aspx.designer.cs">
+      <DependentUpon>forgotpass1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General\forgotpass2.aspx.cs">
+      <DependentUpon>forgotpass2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General\forgotpass2.aspx.designer.cs">
+      <DependentUpon>forgotpass2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General\forgotpass3.aspx.cs">
+      <DependentUpon>forgotpass3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General\forgotpass3.aspx.designer.cs">
+      <DependentUpon>forgotpass3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General\robot.aspx.cs">
+      <DependentUpon>robot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General\robot.aspx.designer.cs">
+      <DependentUpon>robot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin\searchbycity.aspx.cs">
+      <DependentUpon>searchbycity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\searchbycity.aspx.designer.cs">
+      <DependentUpon>searchbycity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\2FA.aspx.cs">
+      <DependentUpon>2FA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\2FA.aspx.designer.cs">
+      <DependentUpon>2FA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\account.aspx.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\account.aspx.designer.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\build.aspx.cs">
+      <DependentUpon>build.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\build.aspx.designer.cs">
+      <DependentUpon>build.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\email.aspx.cs">
+      <DependentUpon>email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\email.aspx.designer.cs">
+      <DependentUpon>email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\password.aspx.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\password.aspx.designer.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\shopping.aspx.cs">
+      <DependentUpon>shopping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\shopping.aspx.designer.cs">
+      <DependentUpon>shopping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\username.aspx.cs">
+      <DependentUpon>username.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\username.aspx.designer.cs">
+      <DependentUpon>username.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58614</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44305/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

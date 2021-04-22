@@ -1,0 +1,76 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2E3740;
+    color: #435160;
+    font-family: "Open Sans", sans-serif;
+    color: #6D7781;
+}
+
+h2 {
+    color: #6D7781;
+    font-family: "Sofia", cursive;
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 3.6em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #435160;
+    text-decoration: none;
+}
+
+.Register1 {
+    width: 350px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -175px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 350px;
+    padding: 20px 0px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #435160;
+    outline: none;
+    color: #6D7781;
+    font-size: 16px;
+}
+
+
+
+
+input[type="submit"] {
+    background: #1FCE6D;
+    border: 0;
+    width: 350px;
+    height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.forgot {
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+
+select {
+    width: 350px;
+    font-size: 16px;
+    padding: 20px 0px;
+    color: #6D7781;
+    background: transparent;
+    border-bottom: 1px solid #435160;
+}

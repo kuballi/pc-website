@@ -1,0 +1,28 @@
+﻿body {
+    background-color: #05132d;
+}
+
+.CPU {
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    height: 650x;
+}
+
+.CPU-text {
+    position: relative;
+    float: right;
+    text-align: left;
+    width: 50%;
+    top: 150px;
+}
+
+.banner-image {
+    background: url('../Media/banner-hardware.jpg');
+    margin-top: 70px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
