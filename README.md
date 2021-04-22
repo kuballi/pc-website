@@ -1,2 +1,2 @@
 # pc-website
-my web-site
+ My first website.This website was created for a school
